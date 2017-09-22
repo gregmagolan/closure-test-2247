@@ -10,7 +10,7 @@ Build succeeds with compiler dist at https://github.com/gregmagolan/closure-comp
 * `yarn build`
 * `yarn start`
 
-### Tests with Module resolution BROWSER
+### Tests with 20170910 module resolution BROWSER
 
 Using the default module resolution `BROWSER`, the failure is:
 
@@ -58,7 +58,7 @@ import './rxjs/add_first';
 
 Adding `export var a;` to `add_first.js` results in the same failure.
 
-### Tests with Module resolution NODE
+### Tests with 20170910 module resolution NODE
 
 Switching to `--module_resolution=NODE` and back to an ambigious import path `rxjs/add-first`, the failure is now:
 
@@ -95,7 +95,7 @@ The build is now successful & runs (but only with a relative import path in `./r
 
 Build output is 454 bytes.
 
-### Succesfully build with module resolution NODE with patches applied
+### Succesfully build with module resolution NODE with patches applied in 20170919.angular.dist
 
 Pulling in my compiler dist at https://github.com/gregmagolan/closure-compiler.git#20170919.angular.dist (HEAD on 20170919 + patches) and running the build with `module_resolution=NODE`, the build succeeds and runs in all variations (build output is consistently 454 bytes).
 
