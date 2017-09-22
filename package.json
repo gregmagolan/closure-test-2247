@@ -1,0 +1,12 @@
+{
+  "name": "closure-test",
+  "version": "0.0.0",
+  "license": "MIT",
+  "devDependencies": {
+    "google-closure-compiler": "git+https://github.com/gregmagolan/closure-compiler.git#20170919.angular.dist"
+  },
+  "scripts": {
+    "build": "java -jar ./node_modules/google-closure-compiler/compiler.jar --flagfile closure.conf",
+    "start": "ls -l bin && node ./bin/user.js"
+  }
+}
