@@ -1,6 +1,8 @@
 ## Test for issue https://github.com/google/closure-compiler/issues/2247
 
-Build still fails with latest google-closure-compiler 20170910.0.0, although the failures are different than the version used in the issue (20161201.0.0).
+Build fails with latest google-closure-compiler 20170910.0.0 with both `BROWSER` and `NODE` module resolution, although the failures are different than the version used in the issue (20161201.0.0).
+
+Build succeeds with compiler dist at https://github.com/gregmagolan/closure-compiler.git#20170919.angular.dist (HEAD on 20170919 + patches) with module resolution `NODE`. This is the configuration committed. Test results outlined below.
 
 ### Usage
 
